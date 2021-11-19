@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  discord-listener:
+    image: ankitson/discord-listener:latest
+    container_name: discord-listener
+    working_dir: /
+    environment:
+      DISCORD_TOKEN: ${DISCORD_TOKEN}
+      TODOIST_TOKEN: ${TODOIST_TOKEN}
+      PYTHONUNBUFFERED: 1
+    entrypoint: ["python", "-c", 'import listener.bot; listener.bot.start()']
+    
+    
+    
+
