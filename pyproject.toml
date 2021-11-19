@@ -10,6 +10,7 @@ python = "^3.9"
 python-dotenv = "^0.18.0"
 "discord.py" = "^1.7.3"
 cogwatch = "^2.1.0"
+todoist-python = "^8"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^3.9.2"
